@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catalog of Films</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: url(../../images/darkned.png) center repeat;
+            background-size: cover;
+            background-color: #000000;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootswatch.min.css">
+    <script type="text/javascript">
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
+</head>
+<body>
+    <script src="../assets/js/bsa.js"></script>
+    <div id="RaitingSelection" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Выберите рейтинг...</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form" class="form-inline">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="минимальный рейтинг">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pass" placeholder="максимальный рейтинг">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"><button type="submit" class="btn btn-success" data-toggle="modal" data-target="#LogInSucess" data-dismiss="modal"><span class="glyphicon glyphicon-ok"></span></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Каталог кинолент</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <ul>
+            <li>
+                <a title="1920" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1920.png" width="300" height="300" alt="1920" style = 'cursor: pointer;'/></a>
+                <a title="1930" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1930.png" width="300" height="300" alt="1930" style = 'cursor: pointer;'/></a>
+                <a title="1940" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1940.png" width="300" height="300" alt="1940" style = 'cursor: pointer;'/></a>
+                <a title="1950" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1950.png" width="300" height="300" alt="1950" style = 'cursor: pointer;'/></a>
+                <a title="1960" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1960.png" width="300" height="300" alt="1960" style = 'cursor: pointer;'/></a>
+                <a title="1970" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1970.png" width="300" height="300" alt="1970" style = 'cursor: pointer;'/></a>
+                <a title="1980" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1980.png" width="300" height="300" alt="1980" style = 'cursor: pointer;'/></a>
+                <a title="1990" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/1990.png" width="300" height="300" alt="1990" style = 'cursor: pointer;'/></a>
+                <a title="2000" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/2000.png" width="300" height="300" alt="2000" style = 'cursor: pointer;'/></a>
+                <a title="2010" data-toggle="modal" data-target="#RaitingSelection" data-dismiss="modal"><img src="~/images/2010.png" width="300" height="300" alt="2010" style = 'cursor: pointer;'/></a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootswatch.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catalog of Films</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: url(../../images/darkned.png) center repeat;
+            background-size: cover;
+            background-color: #000000;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./bootstrap.css" media="screen">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/bootswatch.min.css">
+    <script type="text/javascript">
+
+     var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23019901-1']);
+      _gaq.push(['_setDomainName', "bootswatch.com"]);
+        _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
+</head>
+<body>
+    <script src="../assets/js/bsa.js"></script>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="../" class="navbar-brand">Каталог кинолент</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="navigation">
+        <ul>
+            <li>
+                <a title="Боевик" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/boevik.png" width="300" height="300" alt="Боевик" /></a>
+                <a title="Военный" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/war.png" width="300" height="300" alt="Военный" /></a>
+                <a title="Детектив" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/detective.png" width="300" height="300" alt="Детектив" /></a>
+                <a title="Документальный" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/documentary.png" width="300" height="300" alt="Документальный" /></a>
+                <a title="Драма" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/drama.png" width="300" height="300" alt="Драма" /></a>
+                <a title="Мелодрама" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/melodrama.png" width="300" height="300" alt="Мелодрама" /></a>
+                <a title="Мультфильм" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/cartoon.png" width="300" height="300" alt="Мультфильм" /></a>
+                <a title="Мюзикл" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/musical.png" width="300" height="300" alt="Мюзикл" /></a>
+                <a title="Комедия" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/comedy.png" width="300" height="300" alt="Комедия" /></a>
+                <a title="Фантастика" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/fantasy.png" width="300" height="300" alt="Фантастика" /></a>
+                <a title="Ужасы" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/horror.png" width="300" height="300" alt="Ужасы" /></a>
+                <a title="Триллер" href='@Url.Action("DSelection","DecennarySelection")'><img src="~/images/thriller.png" width="300" height="300" alt="Триллер" /></a>
+            </li>
+                </ul>
+    </div>
+    
+    <script src="../bower_components/jquery/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootswatch.js"></script>
+</body>
+</html>
