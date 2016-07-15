@@ -606,7 +606,8 @@ jQuery.extend({
 		} catch( e ) {
 			xml = undefined;
 		}
-		if ( !xml || !xml.documentElement || xml.getElementsByTagName( "parsererror" ).length ) {
+		if ( !xml || !xml.documentElement || xml.getElementsByTag
+( "parsererror" ).length ) {
 			jQuery.error( "Invalid XML: " + data );
 		}
 		return xml;

@@ -1,0 +1,50 @@
+﻿@model CatalogOfFilms.Models.FilmSelection
+@{
+    ViewBag.Title = "Selection";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <td class="bottom-left">
+        <p><b>Выберите жанр</b></p>
+        <p><input type="radio" name="genre" title="Боевик"><img src="~/images/boevik.png" width="150" height="150" alt="Боевик" /></p>
+        <p><input type="radio" name="genre" title="Военный"><img src="~/images/war.png" width="150" height="150" alt="Военный" /></p>
+        <p><input type="radio" name="genre" title="Детектив"><img src="~/images/detective.png" width="150" height="150" alt="Детектив" /></p>
+        <p><input type="radio" name="genre" title="Документальный"><img src="~/images/documentary.png" width="150" height="150" alt="Документальный" /></p>
+        <p><input type="radio" name="genre" title="Драма"><img src="~/images/drama.png" width="150" height="150" alt="Драма" /></p>
+        <p><input type="radio" name="genre" title="Мелодрама"><img src="~/images/melodrama.png" width="150" height="150" alt="Мелодрама" /></p>
+        <p><input type="radio" name="genre" title="Мультфильм"><img src="~/images/cartoon.png" width="150" height="150" alt="Мультфильм" /></p>
+        <p><input type="radio" name="genre" title="Мюзикл"><img src="~/images/musical.png" width="150" height="150" alt="Мюзикл" /></p>
+        <p><input type="radio" name="genre" title="Комедия"><img src="~/images/comedy.png" width="150" height="150" alt="Комедия" /></p>
+        <p><input type="radio" name="genre" title="Фантастика"><img src="~/images/fantasy.png" width="150" height="150" alt="Фантастика" /></p>
+        <p><input type="radio" name="genre" title="Ужасы"><img src="~/images/horror.png" width="150" height="150" alt="Ужасы" /></p>
+        <p><input type="radio" name="genre" title="Триллер"><img src="~/images/thriller.png" width="150" height="150" alt="Триллер" /></p>
+    </td>
+    <td class="bottom">
+        <p><b>Выберите десятилетие</b></p>
+        <p><input type="radio" name="decennary" title="1920"><img src="~/images/1920.png" width="150" height="150" alt="1920" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="1930"><img src="~/images/1930.png" width="150" height="150" alt="1930" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="1940"><img src="~/images/1940.png" width="150" height="150" alt="1940" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="1950"><img src="~/images/1950.png" width="150" height="150" alt="1950" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="1960"><img src="~/images/1960.png" width="150" height="150" alt="1960" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="1970"><img src="~/images/1970.png" width="150" height="150" alt="1970" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="1980"><img src="~/images/1980.png" width="150" height="150" alt="1980" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="1990"><img src="~/images/1990.png" width="150" height="150" alt="1990" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="2000"><img src="~/images/2000.png" width="150" height="150" alt="2000" style='cursor: pointer;' /></p>
+        <p><input type="radio" name="decennary" title="2010"><img src="~/images/2010.png" width="150" height="150" alt="2010" style='cursor: pointer;' /></p>
+    </td>
+    <td class="bottom-right">
+        <form role="form" class="form-inline">
+            <p><b>Выберите рейтинг</b></p>
+            <div class="form-group">
+                <input type="number" class="form-control" name="min_rating" placeholder="минимальный рейтинг">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="max_rating" placeholder="максимальный рейтинг">
+            </div>
+        </form>
+    </td>
+    <button type="button" class="btn btn-info btn-lg btn-block" onclick="window.location.href='@Url.Action("ShowFilms", "ShowFilms")'" />Показать</button>
+</body>
+</html>

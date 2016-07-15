@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace CatalogOfFilms.Controllers
 {
-    public class GenreSelectionController : Controller
+    public class SelectionController : Controller
     {
-        // GET: GenreSelection
+        // GET: Selection
         public ActionResult Selection()
         {
             return View();

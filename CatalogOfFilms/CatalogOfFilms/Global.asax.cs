@@ -13,6 +13,6 @@ namespace CatalogOfFilms
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-        }
+        }        
     }
 }

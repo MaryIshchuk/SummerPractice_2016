@@ -48,7 +48,13 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
   function transitionEnd() {
     var el = document.createElement('bootstrap')
 
-    var transEndEventNames = {
+    var transEndEvent
+
+
+
+
+
+s = {
       'WebkitTransition' : 'webkitTransitionEnd'
     , 'MozTransition'    : 'transitionend'
     , 'OTransition'      : 'oTransitionEnd otransitionend'
