@@ -1,0 +1,16 @@
+﻿@model FilmsCatalog.Models.HomeModel 
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "ShowFilms";
+}
+
+@foreach (var item in Model.Films)
+{
+    <h1>@item.Tittle</h1><br />
+            <img src="@item.Poster"<br />
+            @item.Description<br />
+            @item.Genre<br />
+            @item.Decennary<br />
+}
+
