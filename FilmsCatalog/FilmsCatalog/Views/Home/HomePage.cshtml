@@ -1,0 +1,42 @@
+﻿@model FilmsCatalog.Models.HomeModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<body>
+    <ul class="nav navbar-nav navbar-right">
+        <div class="btn-group">
+            <button class="btn btn-success btn-lg" type="button" onclick="window.location.href='@Url.Action("Registration", "Registration")'">Регистрация</button>
+        </div>
+    </ul>
+
+    @if (FilmsCatalog.Helpers.AuthHelper.IsAuthenticated(Context))
+    {
+        @FilmsCatalog.Helpers.AuthHelper.GetUser(Context).Login<br />
+        @Html.ActionLink("Выйти", "LogOff", "Account")<br />
+    }
+    else
+    {
+        using (Html.BeginForm("LogIn", "Account", FormMethod.Post))
+        {
+            @Html.TextBoxFor(l => l.Login)
+            @Html.ValidationMessageFor(l => l.Login)<br />
+            @Html.PasswordFor(l => l.Password)
+            @Html.ValidationMessageFor(l => l.Password)<br />
+            <input class="btn btn-success btn-lg" type="submit" value="Войти" />
+        }
+    }
+
+    <div class="container">
+        <div class="page-header" id="banner">
+            <div class="row">
+                <button type="button" class="btn btn-info btn-lg btn-block" onclick="window.location.href='@Url.Action("Index", "Selection")'" />Приступить к выбору фильма</button>
+                <button type="button" class="btn btn-info btn-lg btn-block" onclick="window.location.href='@Url.Action("ShowFilms", "Show")'" />Показать все фильмы</button>
+                        </div>
+        </div>
+    </div>
+</body>
+</html>

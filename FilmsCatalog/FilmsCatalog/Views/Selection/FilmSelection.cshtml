@@ -1,0 +1,18 @@
+﻿@model FilmsCatalog.Models.HomeModel
+@{
+    ViewBag.Title = "FilmSelection";
+}
+
+    @foreach (var item in Model.Films)
+    {
+        <h1>@item.Tittle</h1>
+        <br />
+        <img src="@item.Poster"
+        <br />
+            @item.Description
+            <br />
+            @item.Genre1.GenreName
+            <br />
+            @item.Rating
+            <br />
+    }
